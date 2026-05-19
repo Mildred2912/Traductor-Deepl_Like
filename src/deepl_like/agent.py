@@ -1,4 +1,4 @@
-from src.deepl_like.llm_model import ChatOllama
+from src.Deepl_Like.llm_model import ChatOllama
 
 
 llm = ChatOllama(model="phi3")
@@ -54,7 +54,7 @@ Texto:
         return self.llm.invoke(prompt)
 
     # ---------------------------
-    # Router (CLAVE PARA LA PROFE)
+    # Router
     # ---------------------------
     def act(self, task_type: str, data: dict) -> str:
 
