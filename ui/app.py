@@ -1,6 +1,11 @@
 import streamlit as st
-from src.deepl_like.agent import TranslatorAgent
-from src.deepl_like.llm_model import ChatOllama
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from src.Deepl_Like.agent import TranslatorAgent
+from src.Deepl_Like.llm_model import ChatOllama
 
 # =========================
 # CONFIG
